@@ -1,0 +1,46 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+	<title>온라인 서점 시스템</title>
+	<style>
+	* {
+	padding: 0px;
+	}
+	
+	html, body{height:100%;}
+	
+	.loginMenu {
+		float:center;
+		width:100%;
+		height:80px;
+    }
+    .searchBox {
+    	float:center;
+    	width:100%;
+    	height:150px;
+    }
+    .menu {
+    	float:center;
+    	width:100%;
+    	height:8%;
+    }
+    .bottomContent {
+    	float:center;
+    	width:100%;
+    	height:100%;
+    }
+    .connection {
+    	float:center;
+    	width:100%;
+    	height:0%;
+    }
+	</style>
+</head>
+<body>
+	<iframe class="loginMenu" src=buttonForLogin.html name=iframeLoginButton></iframe>
+	<iframe class="searchBox" src=searchBox.html name=iframeSearchBox></iframe>
+	<iframe class="menu" src="bookstoreMenu.html" name=iframeMenu></iframe>
+	<iframe class="bottomContent" src="welcome.html" name=iframeContent></iframe>
+	<iframe class="connection" src="contentForConnection.jsp" name=iframeConnection></iframe>
+</body>
+</html>

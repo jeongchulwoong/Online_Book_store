@@ -1,0 +1,94 @@
+@charset "EUC-KR";
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial;
+  font-size: 14px;
+  line-height: 20px;
+  color: #3b3b3b;
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+  background: #DBDFFD;
+}
+@media screen and (max-width: 580px) {
+  body {
+    font-size: 16px;
+    line-height: 22px;
+  }
+}
+h1 {
+	color: #333333;
+	font-family: Georgia, Serif;
+}
+h2 {
+	color: #333333;
+	font-family: Georgia, Serif;
+}
+table {
+  margin: 0 0 40px 0;
+  width: 100%;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+  display: table;
+}
+h3 {
+	color:black;
+}
+#b {
+	background: #fa7a73;
+	font-weight: 900;
+	color: white;
+}
+#c {
+	background: #FF5F00;
+	font-weight: 900;
+	color: white;
+}
+#d {
+	background: #9BA3EB;
+	font-weight: 900;
+	color: white;
+}
+#orange {
+	background: #F5876E;
+	font-weight: 900;
+	color: white;
+}
+#blue {
+	background: #61A8DC;
+	font-weight: 900;
+	color: white;
+}
+#green {
+	background: #8EBD40;
+	font-weight: 900;
+	color: white;
+}
+#purple {
+	background: #988CC3;
+	font-weight: 900;
+	color: white;
+}
+th {
+	background: #27ae60;
+	font-weight: 900;
+	color: white;
+	font-size: 24px;
+}
+
+td {
+	align: center;
+	color: black;
+	font-size: 20px;
+}
+  tbody tr:nth-child(2n) {
+    background-color: #ffffff;
+  }
+  tbody tr:nth-child(2n+1) {
+    background-color: #e6e6e6;
+  }
+  
+.submit {
+	margin:0px;
+}
+
+
+
+

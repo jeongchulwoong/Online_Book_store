@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<link rel="stylesheet" href="listStyle.css">
+<title>로그인 양식</title>
+<style>
+input.bar {
+width: 130px;
+}
+</style>
+</head>
+<body>
+	<form method=POST action="systemLogin.jsp">
+	<table align=center valign=top border="0" cellpadding="8" cellspacing="0" bordercolor="#999999">
+		<tr><th id="b" colspan="2"><h4>로그인</h4></th></tr>
+		<tr><td colspan="2" height=20></td></tr>
+		<tr><td colspan="2" align=center>
+			<select name="loginType" size="1">
+				<option value="customer">고객</option> <option value="manager">관리자</option>
+			</select>
+		</td></tr>
+		<tr><td colspan="2" height=20></td></tr>
+		<tr>
+			<td width=47% align=right>ID</td>
+			<td width=53% align=left><input class="bar" type="text" name="idForLogin"></td>
+		</tr>
+		<tr>
+			<td align=right>PW</td>
+			<td align=left><input class="bar" type="password" name="pwForLogin"></td>
+		</tr>
+		<tr><td colspan="2" height=20></td></tr>
+		<tr>
+		<td colspan="2" align=center><input type="submit" value="로그인"></td>
+		</tr>
+	</table>
+	</form>
+</body>
+</html>

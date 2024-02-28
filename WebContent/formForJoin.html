@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+	<title>회원가입 양식</title>
+	<link rel="stylesheet" href="listStyle.css">
+	<style>
+	input.bar {
+		width: 200px;
+	}
+	</style>
+</head>
+<body>
+	<script>
+		function checkID() {
+			var id = document.getElementById("idForJoin").value;
+			if(id.length == 0 || id == "") {
+				alert("ID를 입력해주세요.");
+			}
+			else {
+				window.open("idCheckForm.jsp", "ID 중복 검사", "width=400, height=200");
+			}
+		}
+		
+		
+		function submitEvent(form) {
+			var id = document.getElementById("idForJoin").value;
+			var pw = document.getElementById("pwForJoin").value;
+			var checkPw = document.getElementById("checkPwForJoin").value;
+			var name = document.getElementById("nameForJoin").value;
+			var pn = document.getElementById("pnForJoin").value;
+			
+			if(id.length == 0 || id == "") {
+				alert("ID를 입력해주세요!!");
+				return false;
+			}
+			else if(pw.length < 3) {
+				if(pw.length == 0) {
+					alert("PW를 입력해주세요!!");
+				}
+				else {
+					alert("PW는 3자 이상부터 가능합니다.")
+				}
+				return false;
+			}
+			else if(checkPw != pw) {
+				alert("'PW확인'이 동일하지 않습니다.");
+				return false;
+			}
+			else if(name.length == 0 || name == "") {
+				alert("이름을 입력해주세요!!");
+				return false;
+			}
+			else if(pn.length == 0 || pn == "") {
+				alert("전화번호를 입력해주세요!!");
+				return false;
+			}
+			else {
+				alert("회원가입 되었습니다.");
+				return true;
+			}
+		}
+	</script>
+
+	<form name="joinForm" method=POST action="systemJoin.jsp" onsubmit="return submitEvent(this)">
+	<table align=center valign=top border="0" cellpadding="8" cellspacing="0" bordercolor="#999999">
+		<tr><th id="b" colspan="3"><h4>회원가입</h4></th></tr>
+		<tr><td colspan="3" height=20></td></tr>
+		<tr>
+			<td width=30% align=right>ID</td>
+			<td width=40% align=center><input class="bar" type="text" name="idForJoin" id="idForJoin" size="20"></td>
+			<td><input type="button" value="중복 확인" onclick="checkID()"></input></td>
+		</tr>
+		<tr>
+			<td align=right>PW</td>
+			<td align=center><input class="bar" type="password" name="pwForJoin" id="pwForJoin" size="21"></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td align=right>PW 확인</td>
+			<td align=center><input class="bar" type="password" name="checkPwForJoin" id="checkPwForJoin" size="21"></td>
+			<td></td>
+		</tr>
+		<tr><td colspan="3" height=20></td></tr>
+		<tr>
+			<td align=right>이름</td>
+			<td align=center><input class="bar" type="text" name="nameForJoin" id="nameForJoin" size="20"></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td align=right>연락처</td>
+			<td align=center><input class="bar" type="text" name="pnForJoin" id="pnForJoin" size="20" placeholder="010-0000-0000"></td>
+			<td></td>
+		</tr>
+		<tr><td colspan="3" height=20></td></tr>
+		<tr>
+			<td colspan="3" align=center><input type="submit" value="회원가입"></td>
+		</tr>
+	</table>
+	</form>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<link rel="stylesheet" href="listStyle.css">
+<title>신규 도서 등록</title>
+</head>
+<body>
+	<form method=POST action="systemEnrolBook.jsp">
+	<table align=center width=500 border=0>
+	
+		<tr><th colspan="2"><h4>신규 도서 등록</h4></th></tr>
+		<tr><td colspan="2" height=20></td></tr>
+		
+		<tr><td colspan="2" height=80 align=center>등록할 책의 정보를 입력하시오.</td></tr>
+		
+		
+		
+		<tr>
+			<td width=45% align=right>제목</td><td width=55% align=left><input type="text" name="title" size="20"></td>
+		</tr>
+		<tr>
+			<td align=right>저자</td><td align=left><input type="text" name="author" size="20"></td>
+		</tr>
+		<tr>
+			<td align=right>ISBN</td><td align=left><input type="text" name="ISBN" size="20"></td>
+		</tr>
+		<tr>
+			<td align=right>장르</td><td align=left><input type="text" name="genre" size="20"></td>
+		</tr>
+		<tr>
+			<td align=right>가격</td><td align=left><input type="text" name="price" size="20"></td>
+		</tr>
+		<tr>
+			<td align=right>출판사</td><td align=left><input type="text" name="publisher" size="20"></td>
+		</tr>
+		
+		
+		
+		<tr><td colspan="2" height=20></td></tr>
+		<tr>
+		<td colspan="2" align=center><input type="submit" value="등록">&nbsp;&nbsp;<input type="reset" value="초기화"></td>
+		</tr>
+	</table>
+	</form>
+</body>
+</html>

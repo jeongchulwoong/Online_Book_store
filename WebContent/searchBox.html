@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+	<title>검색창</title>
+	<link rel="stylesheet" href="searchBoxStyle.css">
+</head>
+<body>
+	<form action="systemSearch.jsp" method="POST" target="iframeContent" class="search-bar">
+		<input type="search" name="boxForSearch" pattern=".*\S.*" required>
+				<button class="search-btn" type="submit">
+				<span>Search</span>
+		</button>
+	</form>
+</body>
+</html>
